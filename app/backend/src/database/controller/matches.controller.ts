@@ -1,10 +1,14 @@
 import { Request, Response } from 'express';
-import matchServiceGetAll from '../service/matches.service';
+import matchServiceGetAll, { matchServiceGetProgress } from '../service/matches.service';
 
-async function matchControllerGetAll(_req: Request, res: Response) {
+async function matchControllerGetAll(req: Request, res: Response) {
+  if (Object.keys(req.query).length > 0) {
+    const reqParam = String(req.query.inProgress);
+    const { matches } = await matchServiceGetProgress(reqParam);
+    res.status(200).json(matches);
+    return;
+  }
   const { matches } = await matchServiceGetAll();
-  if (!matches) return res.status(400).json({ message: 'Teams not found' });
-
   res.status(200).json(matches);
 }
 
