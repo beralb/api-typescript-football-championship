@@ -1,3 +1,4 @@
+import IMatch from '../interfaces/matches/IMatch';
 import Matches from '../models/Matches';
 
 import Teams from '../models/Teams';
@@ -14,7 +15,8 @@ const matchServiceGetAll = async (): Promise<{ matches: Matches[] }> => {
 
 const matchServiceGetProgress = async (
   queryParam: string,
-): Promise<{ matches: Matches[]
+): Promise<{
+  matches: Matches[]
 }> => {
   const convertedQueryParam = ((query: string) => {
     if (query === 'true') return 1;
@@ -31,8 +33,38 @@ const matchServiceGetProgress = async (
   return { matches };
 };
 
+const matchServiceSaveMatch = async (matchParam: IMatch): Promise<{ newMatch: Matches }> => {
+  const {
+    homeTeam,
+    awayTeam,
+    homeTeamGoals,
+    awayTeamGoals,
+    inProgress,
+  } = matchParam;
+  const newMatch = await Matches.create({
+    homeTeam,
+    awayTeam,
+    homeTeamGoals,
+    awayTeamGoals,
+    inProgress,
+  });
+
+  return { newMatch };
+};
+
+const matchServicePatchMatch = async (id: number) => {
+  await Matches.update(
+    { inProgress: false },
+    { where: { id } },
+  );
+  const response = { message: 'Finished' };
+  return response;
+};
+
 export default matchServiceGetAll;
 
 export {
   matchServiceGetProgress,
+  matchServiceSaveMatch,
+  matchServicePatchMatch,
 };

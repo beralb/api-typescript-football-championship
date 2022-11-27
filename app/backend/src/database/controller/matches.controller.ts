@@ -1,5 +1,7 @@
 import { Request, Response } from 'express';
-import matchServiceGetAll, { matchServiceGetProgress } from '../service/matches.service';
+import matchServiceGetAll, {
+  matchServiceGetProgress, matchServicePatchMatch, matchServiceSaveMatch,
+} from '../service/matches.service';
 
 async function matchControllerGetAll(req: Request, res: Response) {
   if (Object.keys(req.query).length > 0) {
@@ -12,4 +14,23 @@ async function matchControllerGetAll(req: Request, res: Response) {
   res.status(200).json(matches);
 }
 
+async function matchControllerSaveMatch(req: Request, res: Response) {
+  const sentMatch = { ...req.body, inProgress: true };
+  const {
+    newMatch,
+  } = await matchServiceSaveMatch(sentMatch);
+  res.status(201).json(newMatch);
+}
+
+async function matchControllerPatchMatch(req: Request, res: Response) {
+  const id = Number(req.params.id);
+  const { message } = await matchServicePatchMatch(id);
+  res.status(200).json({ message });
+}
+
 export default matchControllerGetAll;
+
+export {
+  matchControllerSaveMatch,
+  matchControllerPatchMatch,
+};
