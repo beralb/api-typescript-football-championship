@@ -6,7 +6,7 @@ const serviceGetAll = async (): Promise<{ teams: { id: number, teamName: string 
   return { teams };
 };
 
-const serviceGetById = async (idParam: number): Promise<{
+const serviceGetTeamById = async (idParam: number): Promise<{
   team: { id: number, teamName: string } | null
 }> => {
   const team = await Team.findByPk(idParam);
@@ -17,5 +17,5 @@ const serviceGetById = async (idParam: number): Promise<{
 export default serviceGetAll;
 
 export {
-  serviceGetById,
+  serviceGetTeamById,
 };

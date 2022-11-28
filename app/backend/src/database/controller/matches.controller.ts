@@ -19,12 +19,14 @@ async function matchControllerSaveMatch(req: Request, res: Response) {
   const {
     newMatch,
   } = await matchServiceSaveMatch(sentMatch);
+  if (!newMatch) return res.status(400).json({ message: 'No teams inserted' });
   res.status(201).json(newMatch);
 }
 
 async function matchControllerPatchMatch(req: Request, res: Response) {
   const id = Number(req.params.id);
   const { message } = await matchServicePatchMatch(id);
+  if (!message) return res.status(400).json({ message: 'No teams patched' });
   res.status(200).json({ message });
 }
 

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import serviceGetAll, { serviceGetById } from '../service/teams.service';
+import serviceGetAll, { serviceGetTeamById } from '../service/teams.service';
 
 async function controllerGetAll(_req: Request, res: Response) {
   const { teams } = await serviceGetAll();
@@ -7,10 +7,10 @@ async function controllerGetAll(_req: Request, res: Response) {
   res.status(200).json(teams);
 }
 
-async function controllerGetById(req: Request, res: Response) {
+async function controllerTeamGetById(req: Request, res: Response) {
   const { id } = req.params;
   const idParam = Number(id);
-  const { team } = await serviceGetById(idParam);
+  const { team } = await serviceGetTeamById(idParam);
   if (!team) return res.status(400).json({ message: 'Did not find teams' });
   res.status(200).json(team);
 }
@@ -18,5 +18,5 @@ async function controllerGetById(req: Request, res: Response) {
 export default controllerGetAll;
 
 export {
-  controllerGetById,
+  controllerTeamGetById,
 };

@@ -1,0 +1,138 @@
+Date : 2022-11-27 16:28:58
+Directory : /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app
+Total : 77 files,  58451 codes, 129 comments, 359 blanks, all 58939 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          4 |     55,510 |         58 |          3 |     55,571 |
+| JavaScript React   |         18 |        986 |          0 |        117 |      1,103 |
+| JavaScript         |         12 |        614 |          2 |         28 |        644 |
+| CSS                |          7 |        584 |          0 |         77 |        661 |
+| TypeScript         |         25 |        444 |         39 |        125 |        608 |
+| JSON with Comments |          2 |        168 |          2 |          0 |        170 |
+| YAML               |          2 |        103 |          8 |          2 |        113 |
+| HTML               |          1 |         19 |         19 |          1 |         39 |
+| Docker             |          2 |         12 |          0 |          0 |         12 |
+| Shell Script       |          1 |          5 |          1 |          3 |          9 |
+| Ignore             |          2 |          5 |          0 |          2 |          7 |
+| Properties         |          1 |          1 |          0 |          1 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                                         |         77 |     58,451 |        129 |        359 |     58,939 |
+| backend                                                                                                                                                   |         40 |     18,101 |        102 |        146 |     18,349 |
+| backend/src                                                                                                                                               |         32 |        995 |         41 |        140 |      1,176 |
+| backend/src/database                                                                                                                                      |         29 |        952 |         19 |        115 |      1,086 |
+| backend/src/database/config                                                                                                                               |          1 |         15 |          0 |          3 |         18 |
+| backend/src/database/controller                                                                                                                           |          3 |         60 |          0 |         14 |         74 |
+| backend/src/database/interfaces                                                                                                                           |          2 |         15 |          0 |          2 |         17 |
+| backend/src/database/interfaces/login                                                                                                                     |          1 |          7 |          0 |          1 |          8 |
+| backend/src/database/interfaces/matches                                                                                                                   |          1 |          8 |          0 |          1 |          9 |
+| backend/src/database/middlewares                                                                                                                          |          3 |         27 |          0 |         12 |         39 |
+| backend/src/database/migrations                                                                                                                           |          4 |        120 |          0 |          9 |        129 |
+| backend/src/database/models                                                                                                                               |          5 |        140 |         17 |         24 |        181 |
+| backend/src/database/routes                                                                                                                               |          4 |         33 |          0 |         17 |         50 |
+| backend/src/database/seeders                                                                                                                              |          3 |        431 |          2 |          6 |        439 |
+| backend/src/database/service                                                                                                                              |          3 |         96 |          0 |         24 |        120 |
+| backend/src/database/validations                                                                                                                          |          1 |         15 |          0 |          4 |         19 |
+| backend/src/tests                                                                                                                                         |          1 |         14 |         21 |         13 |         48 |
+| frontend                                                                                                                                                  |         35 |     40,247 |         19 |        211 |     40,477 |
+| frontend/public                                                                                                                                           |          1 |         19 |         19 |          1 |         39 |
+| frontend/src                                                                                                                                              |         29 |      1,622 |          0 |        206 |      1,828 |
+| frontend/src/components                                                                                                                                   |         14 |        707 |          0 |         77 |        784 |
+| frontend/src/images                                                                                                                                       |          1 |          5 |          0 |          1 |          6 |
+| frontend/src/pages                                                                                                                                        |          4 |        279 |          0 |         40 |        319 |
+| frontend/src/services                                                                                                                                     |          1 |         16 |          0 |          6 |         22 |
+| frontend/src/styles                                                                                                                                       |          7 |        584 |          0 |         77 |        661 |
+| frontend/src/styles/components                                                                                                                            |          2 |        176 |          0 |         19 |        195 |
+| frontend/src/styles/pages                                                                                                                                 |          4 |        400 |          0 |         56 |        456 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                                                                  | language           | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/.dockerignore                                                  | Ignore             |          4 |          0 |          1 |          5 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/.eslintrc.json                                                 | JSON with Comments |        148 |          0 |          0 |        148 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/Dockerfile                                                     | Docker             |          7 |          0 |          0 |          7 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/nyc.config.js                                                  | JavaScript         |         11 |          0 |          1 |         12 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/package-lock.json                                              | JSON               |     16,903 |          0 |          1 |     16,904 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/package.json                                                   | JSON               |          8 |         58 |          0 |         66 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/app.ts                                                     | TypeScript         |         25 |          1 |          9 |         35 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/config/database.ts                                | TypeScript         |         15 |          0 |          3 |         18 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/controller/login.controller.ts                    | TypeScript         |         11 |          0 |          3 |         14 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/controller/matches.controller.ts                  | TypeScript         |         31 |          0 |          6 |         37 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/controller/teams.controller.ts                    | TypeScript         |         18 |          0 |          5 |         23 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/interfaces/login/Ilogin.ts                        | TypeScript         |          7 |          0 |          1 |          8 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/interfaces/matches/IMatch.ts                      | TypeScript         |          8 |          0 |          1 |          9 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/middlewares/match.validations.ts                  | TypeScript         |         11 |          0 |          5 |         16 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/middlewares/token.check.ts                        | TypeScript         |         11 |          0 |          4 |         15 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/middlewares/validations.ts                        | TypeScript         |          5 |          0 |          3 |          8 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/migrations/20221123205009-create-users-table.js   | JavaScript         |         32 |          0 |          3 |         35 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/migrations/20221123205112-create-teams-table.js   | JavaScript         |         21 |          0 |          2 |         23 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/migrations/20221123205153-create-matches-table.js | JavaScript         |         54 |          0 |          3 |         57 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/migrations/99999999999999-create-z.js             | JavaScript         |         13 |          0 |          1 |         14 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/models/ExampleModel.ts                            | TypeScript         |         11 |         13 |          7 |         31 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/models/Matches.ts                                 | TypeScript         |         61 |          1 |          6 |         68 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/models/Teams.ts                                   | TypeScript         |         25 |          1 |          4 |         30 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/models/User.ts                                    | TypeScript         |         39 |          2 |          4 |         45 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/models/index.ts                                   | TypeScript         |          4 |          0 |          3 |          7 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/routes/login.router.ts                            | TypeScript         |          8 |          0 |          5 |         13 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/routes/matches.router.ts                          | TypeScript         |         10 |          0 |          4 |         14 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/routes/routes.ts                                  | TypeScript         |          9 |          0 |          4 |         13 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/routes/teams.router.ts                            | TypeScript         |          6 |          0 |          4 |         10 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/seeders/20211116145440-teams.js                   | JavaScript         |         61 |          0 |          2 |         63 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/seeders/20211116145458-matches.js                 | JavaScript         |        349 |          0 |          2 |        351 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/seeders/20211205212238-user.js                    | JavaScript         |         21 |          2 |          2 |         25 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/service/login.service.ts                          | TypeScript         |         20 |          0 |          7 |         27 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/service/matches.service.ts                        | TypeScript         |         61 |          0 |         10 |         71 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/service/teams.service.ts                          | TypeScript         |         15 |          0 |          7 |         22 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/database/validations/login.schema.ts                       | TypeScript         |         15 |          0 |          4 |         19 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/server.ts                                                  | TypeScript         |          4 |          0 |          3 |          7 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/src/tests/change.me.test.ts                                    | TypeScript         |         14 |         21 |         13 |         48 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/tsc_eval.sh                                                    | Shell Script       |          5 |          1 |          3 |          9 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/backend/tsconfig.json                                                  | JSON with Comments |         20 |          2 |          0 |         22 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/docker-compose.dev.yml                                                 | YAML               |         52 |          4 |          1 |         57 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/docker-compose.yml                                                     | YAML               |         51 |          4 |          1 |         56 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/.dockerignore                                                 | Ignore             |          1 |          0 |          1 |          2 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/.env                                                          | Properties         |          1 |          0 |          1 |          2 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/Dockerfile                                                    | Docker             |          5 |          0 |          0 |          5 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/package-lock.json                                             | JSON               |     38,551 |          0 |          1 |     38,552 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/package.json                                                  | JSON               |         48 |          0 |          1 |         49 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/public/index.html                                             | HTML               |         19 |         19 |          1 |         39 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/App.js                                                    | JavaScript         |         19 |          0 |          3 |         22 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/AddNewMatchBtn.jsx                             | JavaScript React   |         14 |          0 |          3 |         17 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/CreateNewGame.jsx                              | JavaScript React   |         89 |          0 |          8 |         97 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/EditGame.jsx                                   | JavaScript React   |         86 |          0 |          7 |         93 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/GameFilter.jsx                                 | JavaScript React   |         36 |          0 |          5 |         41 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/GamesTable.jsx                                 | JavaScript React   |        153 |          0 |         12 |        165 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/Header.jsx                                     | JavaScript React   |         54 |          0 |          7 |         61 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/LeaderboardBtn.jsx                             | JavaScript React   |          8 |          0 |          3 |         11 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/LeaderboardTable.jsx                           | JavaScript React   |        148 |          0 |          9 |        157 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/Loading.jsx                                    | JavaScript React   |          7 |          0 |          3 |         10 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/LoginBtn.jsx                                   | JavaScript React   |          8 |          0 |          3 |         11 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/MatchesBtn.jsx                                 | JavaScript React   |          8 |          0 |          3 |         11 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/Scoreboard.jsx                                 | JavaScript React   |         32 |          0 |          5 |         37 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/TableFilter.jsx                                | JavaScript React   |         37 |          0 |          5 |         42 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/components/TeamOption.jsx                                 | JavaScript React   |         27 |          0 |          4 |         31 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/images/index.js                                           | JavaScript         |          5 |          0 |          1 |          6 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/index.js                                                  | JavaScript         |         12 |          0 |          2 |         14 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/pages/Games.jsx                                           | JavaScript React   |         45 |          0 |          6 |         51 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/pages/Leaderboard.jsx                                     | JavaScript React   |         37 |          0 |          5 |         42 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/pages/Login.jsx                                           | JavaScript React   |         86 |          0 |         12 |         98 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/pages/MatchSettings.jsx                                   | JavaScript React   |        111 |          0 |         17 |        128 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/services/requests.js                                      | JavaScript         |         16 |          0 |          6 |         22 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/app.css                                            | CSS                |          8 |          0 |          2 |         10 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/components/header.css                              | CSS                |         82 |          0 |          9 |         91 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/components/leaderboardTable.css                    | CSS                |         94 |          0 |         10 |        104 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/pages/games.css                                    | CSS                |        177 |          0 |         25 |        202 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/pages/leaderboard.css                              | CSS                |         44 |          0 |          5 |         49 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/pages/login.css                                    | CSS                |         78 |          0 |          9 |         87 |
+| /mnt/popOS/home/harpop/Projects/Projetos Back-End/sd-022-b-trybe-futebol-clube/app/frontend/src/styles/pages/matchSettings.css                            | CSS                |        101 |          0 |         17 |        118 |
+| Total                                                                                                                                                     |                    |     58,451 |        129 |        359 |     58,939 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
