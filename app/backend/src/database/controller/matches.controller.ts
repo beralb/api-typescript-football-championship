@@ -3,7 +3,7 @@ import matchServiceGetAll, {
   matchServiceGetProgress, matchServicePatchMatch, matchServiceSaveMatch,
 } from '../service/matches.service';
 
-async function matchControllerGetAll(req: Request, res: Response) {
+async function matchControllerGet(req: Request, res: Response) {
   if (Object.keys(req.query).length > 0) {
     const reqParam = String(req.query.inProgress);
     const { matches } = await matchServiceGetProgress(reqParam);
@@ -30,7 +30,7 @@ async function matchControllerPatchMatch(req: Request, res: Response) {
   res.status(200).json({ message });
 }
 
-export default matchControllerGetAll;
+export default matchControllerGet;
 
 export {
   matchControllerSaveMatch,

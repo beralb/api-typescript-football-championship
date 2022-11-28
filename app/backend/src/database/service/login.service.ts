@@ -12,6 +12,7 @@ const loginService = async (body: ILogin): Promise<{
   message: string
 }> => {
   const data = await User.findOne({ where: { email: body.email } });
+  // console.log('🚀 ~ file: login.service.ts ~ line 15 ~ loginService ~ data', data?.dataValues.email);
   const responseData = data?.dataValues;
 
   if (!responseData || !compareSync(body.password, responseData.password)) {
