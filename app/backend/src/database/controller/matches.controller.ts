@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import matchServiceGetAll, {
+  matchServiceChangeScore,
   matchServiceGetProgress, matchServicePatchMatch, matchServiceSaveMatch,
 } from '../service/matches.service';
 
@@ -30,9 +31,19 @@ async function matchControllerPatchMatch(req: Request, res: Response) {
   res.status(200).json({ message });
 }
 
+async function matchControllerChangeScore(req: Request, res: Response) {
+  const id = Number(req.params.id);
+  const { homeTeamGoals, awayTeamGoals } = req.body;
+
+  const { message } = await matchServiceChangeScore(id, homeTeamGoals, awayTeamGoals);
+  if (!message) return res.status(400).json({ message: 'No score changed' });
+  res.status(200).json({ message });
+}
+
 export default matchControllerGet;
 
 export {
   matchControllerSaveMatch,
   matchControllerPatchMatch,
+  matchControllerChangeScore,
 };

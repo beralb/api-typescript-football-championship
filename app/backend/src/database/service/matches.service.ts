@@ -61,10 +61,24 @@ const matchServicePatchMatch = async (id: number) => {
   return response;
 };
 
+const matchServiceChangeScore = async (
+  id: number,
+  homeTeamGoals: number,
+  awayTeamGoals: number,
+) => {
+  await Matches.update(
+    { homeTeamGoals, awayTeamGoals },
+    { where: { id } },
+  );
+  const response = { message: 'Score updated' };
+  return response;
+};
+
 export default matchServiceGetAll;
 
 export {
   matchServiceGetProgress,
   matchServiceSaveMatch,
   matchServicePatchMatch,
+  matchServiceChangeScore,
 };
