@@ -9,12 +9,10 @@ import User from '../database/models/User'
 
 import {
   loginUser,
-  token,
   loginMockResponse
-} from './unit/mocks/login.mocks'
+} from './util/mocks/allmocks'
 
 import { Response } from 'superagent';
-import { any } from 'joi';
 
 chai.use(chaiHttp);
 
@@ -24,15 +22,15 @@ const { expect } = chai;
 
 describe('Teste de integração rota Login', () => {
   
-  let chaiHttpResponse;
+  let chaiHttpResponse: Response;
 
-  before(async () => {
+  beforeEach(async () => {
     sinon
       .stub(User, "findOne")
       .resolves(loginMockResponse as any);
   });
 
-  after(() => {
+  afterEach(() => {
     (User.findOne as sinon.SinonStub).restore();
   })
 
@@ -43,7 +41,4 @@ describe('Teste de integração rota Login', () => {
     expect(chaiHttpResponse.status).to.be.equal(200)
   })
 
-  // it('Sub-teste', () => {
-  //   expect(false).to.be.eq(true);
-  // });
 });

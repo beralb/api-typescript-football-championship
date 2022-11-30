@@ -7,9 +7,12 @@ import matchServiceGetAll, {
 async function matchControllerGet(req: Request, res: Response) {
   if (Object.keys(req.query).length > 0) {
     const reqParam = String(req.query.inProgress);
-    const { matches } = await matchServiceGetProgress(reqParam);
-    res.status(200).json(matches);
-    return;
+    if (reqParam === 'true' || reqParam === 'false') {
+      const { matches } = await matchServiceGetProgress(reqParam);
+      res.status(200).json(matches);
+      return;
+    }
+    return res.status(400).json({ message: 'invalid request format' });
   }
   const { matches } = await matchServiceGetAll();
   res.status(200).json(matches);
