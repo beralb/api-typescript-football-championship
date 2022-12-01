@@ -1,8 +1,9 @@
 import { Router } from 'express';
-import homeTeamController from '../controller/leaderboard.controller';
+import { homeTeamController, awayTeamController } from '../controller/leaderboard.controller';
 
 const router = Router();
 
 router.get('/home', homeTeamController);
+router.get('/away', awayTeamController);
 
 export default router;
