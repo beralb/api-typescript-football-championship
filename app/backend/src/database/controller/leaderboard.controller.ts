@@ -1,5 +1,8 @@
 import { Request, Response } from 'express';
-import { getChampionshipHomeBoard, getChampionshipAwayBoard } from '../service/leaderboard.service';
+import {
+  getChampionshipHomeBoard,
+  getChampionshipAwayBoard,
+} from '../service/leaderboard.service';
 
 const homeTeamController = async (_req: Request, res: Response) => {
   const { championshipHomeBoard } = await getChampionshipHomeBoard();
@@ -13,4 +16,11 @@ const awayTeamController = async (_req: Request, res: Response) => {
   res.status(200).json(championshipAwayBoard);
 };
 
+// const leaderboardController = async (_req: Request, res: Response) => {
+//   const { matches } = await leaderboardServiceGetAll();
+//   // if (!teamProfile) return res.status(400).json({ message: 'Leaderboard not found!' });
+//   res.status(200).json(matches);
+// };
+
+// export { homeTeamController, awayTeamController, leaderboardController };
 export { homeTeamController, awayTeamController };
