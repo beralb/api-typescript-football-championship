@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import {
   getChampionshipHomeBoard,
   getChampionshipAwayBoard,
+  leaderboardServiceGetAll,
 } from '../service/leaderboard.service';
 
 const homeTeamController = async (_req: Request, res: Response) => {
@@ -16,11 +17,10 @@ const awayTeamController = async (_req: Request, res: Response) => {
   res.status(200).json(championshipAwayBoard);
 };
 
-// const leaderboardController = async (_req: Request, res: Response) => {
-//   const { matches } = await leaderboardServiceGetAll();
-//   // if (!teamProfile) return res.status(400).json({ message: 'Leaderboard not found!' });
-//   res.status(200).json(matches);
-// };
+const leaderboardController = async (_req: Request, res: Response) => {
+  const championshipBoard = await leaderboardServiceGetAll();
+  if (!championshipBoard) return res.status(400).json({ message: 'Leaderboard not found!' });
+  res.status(200).json(championshipBoard);
+};
 
-// export { homeTeamController, awayTeamController, leaderboardController };
-export { homeTeamController, awayTeamController };
+export { homeTeamController, awayTeamController, leaderboardController };

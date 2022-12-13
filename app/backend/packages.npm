@@ -1,4 +1,2 @@
 joi
-cors
-@types/cors
 sinon-chai
