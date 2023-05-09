@@ -1,6 +1,4 @@
 <h1 align="center">TypeScript Project - Trybe Football Club</h1>
-<h3 align="center">This was a project developed in the back-end module of Web Development Course of <a href=https://www.betrybe.com>Trybe</a></h3>
-<br>
 
 🔭 In this project, I applied the #SOLID architecture principles and the #OOP (Object Oriented Programming) principles in a football championship board.
 
